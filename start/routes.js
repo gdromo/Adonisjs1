@@ -17,3 +17,9 @@
 const Route = use('Route')
 
 Route.on('/').render('welcome')
+
+Route.get('/prueba', ({request, response}) => {
+    return response.status(200).json({
+      message: 'api prueba'
+    })
+  })

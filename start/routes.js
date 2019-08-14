@@ -23,3 +23,10 @@ Route.get('/prueba', ({request, response}) => {
       message: 'api prueba'
     })
   })
+
+
+  Route.get('/prueba2', ({request, response}) => {
+    return response.status(200).json({
+      message: 'api prueba2'
+    })
+  })
